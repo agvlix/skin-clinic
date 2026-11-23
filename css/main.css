@@ -318,7 +318,6 @@ textarea:focus-visible {
     text-transform: uppercase;
     margin-bottom: 14px;
 }
-
 .hero__title {
     font-size: clamp(32px, 4vw, 44px);
     font-weight: 400;

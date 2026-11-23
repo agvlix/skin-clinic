@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -246,19 +247,37 @@
             <section class="section feedback" id="feedback" aria-labelledby="feedback-title">
                 <h2 class="section__title" id="feedback-title">Site feedback &amp; reviews</h2>
                 <div class="feedback__grid">
-                    <div class="feedback__reviews">
-                        <article class="testimonial">
-                            <h3 class="testimonial__author">Olena K.</h3>
-                            <blockquote class="testimonial__quote">
-                                <p>Easy to browse and find natural care products on any screen.</p>
-                            </blockquote>
-                        </article>
-                        <article class="testimonial">
-                            <h3 class="testimonial__author">Maksym P.</h3>
-                            <blockquote class="testimonial__quote">
-                                <p>Clean layout, fast search, and clear product descriptions.</p>
-                            </blockquote>
-                        </article>
+                    <div class="carousel">
+                        <input type="radio" name="rev" id="rev1" checked hidden>
+                        <input type="radio" name="rev" id="rev2" hidden>
+                        <input type="radio" name="rev" id="rev3" hidden>
+
+                        <div class="carousel__slides">
+                            <article class="testimonial carousel__slide s1">
+                                <h3 class="testimonial__author">Olena K.</h3>
+                                <blockquote class="testimonial__quote">
+                                    <p>Easy to browse and find natural care products on any screen.</p>
+                                </blockquote>
+                            </article>
+                            <article class="testimonial carousel__slide s2">
+                                <h3 class="testimonial__author">Maksym P.</h3>
+                                <blockquote class="testimonial__quote">
+                                    <p>Clean layout, fast search, and clear product descriptions.</p>
+                                </blockquote>
+                            </article>
+                            <article class="testimonial carousel__slide s3">
+                                <h3 class="testimonial__author">Sofia R.</h3>
+                                <blockquote class="testimonial__quote">
+                                    <p>Smooth navigation and helpful botanical care guides.</p>
+                                </blockquote>
+                            </article>
+                        </div>
+
+                        <div class="carousel__dots">
+                            <label for="rev1">1</label>
+                            <label for="rev2">2</label>
+                            <label for="rev3">3</label>
+                        </div>
                     </div>
 
                     <form class="feedback__form" action="#" method="post">
@@ -270,6 +289,13 @@
 
                         <button type="submit" class="btn btn--outline">Send feedback</button>
                     </form>
+                </div>
+            </section>
+
+            <section class="section sass-page" aria-labelledby="sass-demo-title">
+                <h2 class="section__title" id="sass-demo-title">Why botanical care</h2>
+                <div class="sass-page__card">
+                    <p>Gentle plant-based formulas crafted for daily comfort and balanced skin.</p>
                 </div>
             </section>
 
