@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin—Clinic | Natural botanical skincare</title>
+    <meta name="description" content="Natural botanical skincare: toners, serums, masks and creams for a radiant glow every day.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="page">
+
+    <header class="header" id="top">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+        <label for="menu-toggle" class="burger" aria-label="Toggle menu">&#9776;</label>
+
+        <nav class="header__nav" aria-label="Main">
+            <ul class="nav-list">
+                <li class="has-submenu">
+                    <a href="#products" aria-haspopup="true">Shop <span class="nav-arrow" aria-hidden="true">&#9662;</span></a>
+                    <ul class="submenu">
+                        <li><a href="#products">Creams</a></li>
+                        <li><a href="#products">Serums</a></li>
+                        <li><a href="#products">Lotions</a></li>
+                        <li><a href="#products">Shop all</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#journal">Journal</a></li>
+                <li><a href="bootstrap.html">Catalog</a></li>
+            </ul>
+        </nav>
+
+        <a href="#top" class="header__brand">Skin—Clinic</a>
+
+        <nav class="header__nav header__nav--right" aria-label="Account and bag">
+            <ul class="nav-list">
+                <li><a href="#auth-modal" class="signin-btn">Sign in</a></li>
+                <li>
+                    <form class="search" role="search" action="#" method="get">
+                        <label class="visually-hidden" for="search">Search</label>
+                        <input type="search" id="search" name="q" placeholder="Search...">
+                        <button type="submit" aria-label="Search">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                                <circle cx="11" cy="11" r="7"></circle>
+                                <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </li>
+                <li><a href="#bag" aria-label="Bag, 0 items">Bag (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <p class="hero__eyebrow">Discover nature’s finest ingredients</p>
+                <h1 class="hero__title" id="hero-title">Glow with nature’s finest, every single day</h1>
+                <a href="#products" class="btn btn--glass">Shop now</a>
+            </div>
+        </section>
+
+        <div class="container">
+
+            <section class="section" id="products" aria-labelledby="best-sellers-title">
+                <h2 class="section__title" id="best-sellers-title">Best sellers</h2>
+                <ul class="product-list" id="product-list">
+                    <li>
+                        <article class="product">
+                            <div class="product__media">
+                                <img src="images/greentoner.png" alt="Face Toner bottle with green box">
+                                <span class="product__tag product__tag--sale">-20%</span>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__title"><a href="#product-toner">Face Toner</a></h3>
+                                <p class="product__price">
+                                    <s><span class="visually-hidden">Original price: </span>$59.99</s>
+                                    <span class="visually-hidden">Sale price: </span><data value="47.99">$47.99</data>
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="product">
+                            <div class="product__media">
+                                <img src="images/bjtoner.png" alt="Body Wash bottle with beige box">
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__title"><a href="#product-wash">Body Wash</a></h3>
+                                <p class="product__price"><data value="49.99">$49.99</data></p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="product">
+                            <div class="product__media">
+                                <img src="images/bjredtoner.png" alt="Body Serum bottle with red box">
+                                <span class="product__tag">New</span>
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__title"><a href="#product-serum">Body Serum</a></h3>
+                                <p class="product__price"><data value="49.99">$49.99</data></p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="product">
+                            <div class="product__media">
+                                <img src="images/redtoner.png" alt="Face Mask bottle with grey box">
+                            </div>
+                            <div class="product__info">
+                                <h3 class="product__title"><a href="#product-mask">Face Mask</a></h3>
+                                <p class="product__price"><data value="49.99">$49.99</data></p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+                <p class="search-empty" id="search-empty" hidden>No products found. Try another search.</p>
+            </section>
+
+            <section class="section" id="categories" aria-labelledby="categories-title">
+                <h2 class="section__title" id="categories-title">Shop by category</h2>
+                <ul class="category-list">
+                    <li>
+                        <a href="#products" class="category">
+                            <img src="images/cream.jpg" alt="">
+                            <span class="category__label">Creams</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#products" class="category">
+                            <img src="images/tonnerdrop.jpg" alt="">
+                            <span class="category__label">Serums</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#products" class="category">
+                            <img src="images/skin.jpg" alt="">
+                            <span class="category__label">Lotion</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section" id="about" aria-labelledby="about-title">
+                <h2 class="section__title" id="about-title">About us</h2>
+                <p>Skin—Clinic is dedicated to bringing you pure, natural botanical skincare solutions crafted with care for a radiant glow every day.</p>
+            </section>
+
+            <section class="section promo" aria-labelledby="promo-title">
+                <div class="promo__image-wrap">
+                    <img class="promo__image" src="images/mask.jpg" alt="Hand holding the Dream Peptide Complex face mask sachet">
+                </div>
+                <div class="promo__text">
+                    <h2 class="promo__title" id="promo-title">Hydrate &amp; revitalize with our pure face mask</h2>
+                    <p class="promo__description">Indulge your skin with natural botanical extracts and oils. This mask hydrates, soothes, and restores glow for all skin types in minutes.</p>
+                    <a href="#products" class="btn btn--outline">Shop the face mask</a>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="featured-title">
+                <h2 class="visually-hidden" id="featured-title">Featured</h2>
+                <ul class="banner-list">
+                    <li>
+                        <article class="banner banner--image">
+                            <img src="images/tonnerhands.jpg" alt="Hand holding a bottle of Pure Solution Essence">
+                            <div class="banner__content">
+                                <h3 class="banner__title">Glow with nature’s best essence</h3>
+                                <a href="#products" class="btn btn--glass">Shop the essence</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="banner banner--gift">
+                            <div class="gift-card" aria-hidden="true">
+                                <span>Skin—Clinic</span>
+                                <span class="gift-card__sub">Gift Card</span>
+                            </div>
+                            <div class="banner__content">
+                                <h3 class="banner__title">Gift the glow</h3>
+                                <a href="#products" class="btn btn--outline">Get a gift card</a>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section" id="journal" aria-labelledby="journal-title">
+                <h2 class="section__title" id="journal-title">Journal</h2>
+                <p>Explore our latest skincare routines, ingredient spotlights, and expert tips for healthy skin.</p>
+            </section>
+
+            <section class="section" aria-labelledby="testimonials-title">
+                <h2 class="section__title" id="testimonials-title">Testimonials</h2>
+                <ul class="testimonial-list">
+                    <li>
+                        <article class="testimonial">
+                            <h3 class="testimonial__author">Sara J.</h3>
+                            <blockquote class="testimonial__quote">
+                                <p>The Face Toner has transformed my morning routine with its natural hydration. Highly recommend!</p>
+                            </blockquote>
+                            <a href="#products" class="testimonial__product">
+                                <img src="images/greentoner.png" alt="">
+                                <span class="testimonial__product-name">Face Toner</span>
+                                <span class="testimonial__product-cta">View product</span>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="testimonial">
+                            <h3 class="testimonial__author">Helen D.</h3>
+                            <blockquote class="testimonial__quote">
+                                <p>The Body Serum left my skin silky smooth after just one use. It’s become my go-to for a natural glow every day!</p>
+                            </blockquote>
+                            <a href="#products" class="testimonial__product">
+                                <img src="images/bjtoner.png" alt="">
+                                <span class="testimonial__product-name">Body Serum</span>
+                                <span class="testimonial__product-cta">View product</span>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="testimonial">
+                            <h3 class="testimonial__author">Kim W.</h3>
+                            <blockquote class="testimonial__quote">
+                                <p>This Face Mask is a game-changer! My skin feels rejuvenated and looks brighter—perfect for a quick self-care moment.</p>
+                            </blockquote>
+                            <a href="#products" class="testimonial__product">
+                                <img src="images/redtoner.png" alt="">
+                                <span class="testimonial__product-name">Face Mask</span>
+                                <span class="testimonial__product-cta">View product</span>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section feedback" id="feedback" aria-labelledby="feedback-title">
+                <h2 class="section__title" id="feedback-title">Site feedback &amp; reviews</h2>
+                <div class="feedback__grid">
+                    <div class="feedback__reviews">
+                        <article class="testimonial">
+                            <h3 class="testimonial__author">Olena K.</h3>
+                            <blockquote class="testimonial__quote">
+                                <p>Easy to browse and find natural care products on any screen.</p>
+                            </blockquote>
+                        </article>
+                        <article class="testimonial">
+                            <h3 class="testimonial__author">Maksym P.</h3>
+                            <blockquote class="testimonial__quote">
+                                <p>Clean layout, fast search, and clear product descriptions.</p>
+                            </blockquote>
+                        </article>
+                    </div>
+
+                    <form class="feedback__form" action="#" method="post">
+                        <label for="feedback-name">Your name</label>
+                        <input type="text" id="feedback-name" name="name" placeholder="Anna" required>
+
+                        <label for="feedback-msg">Your review</label>
+                        <textarea id="feedback-msg" name="message" rows="3" placeholder="Share your thoughts about the site..." required></textarea>
+
+                        <button type="submit" class="btn btn--outline">Send feedback</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="section instagram" aria-labelledby="instagram-title">
+                <h2 class="instagram__label" id="instagram-title">Follow us on Instagram</h2>
+                <p><a href="https://instagram.com" target="_blank" rel="noopener" class="instagram__handle">@Skin—Clinic</a></p>
+            </section>
+
+        </div>
+
+        <section class="subscribe" aria-labelledby="subscribe-title">
+            <div class="subscribe__content">
+                <h2 class="subscribe__title" id="subscribe-title">Subscribe for exclusive deals</h2>
+                <p class="subscribe__text" id="subscribe-text">Get exclusive access to the latest natural skincare deals and tips delivered straight to your inbox!</p>
+                <form class="subscribe__form" action="#" method="post">
+                    <label class="visually-hidden" for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" aria-describedby="subscribe-text" required>
+                    <button type="submit" aria-label="Subscribe">&rarr;</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__col">
+                <p class="footer__logo">Skin—Clinic</p>
+                <ul class="footer__social">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+
+            <nav class="footer__col" aria-labelledby="footer-products">
+                <h2 class="footer__heading" id="footer-products">Products</h2>
+                <ul>
+                    <li><a href="#products">Creams</a></li>
+                    <li><a href="#products">Serums</a></li>
+                    <li><a href="#products">Lotions</a></li>
+                    <li><a href="#products">Shop all</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer__col" aria-labelledby="footer-support">
+                <h2 class="footer__heading" id="footer-support">Support</h2>
+                <ul>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#returns">Return policy</a></li>
+                    <li><a href="#shipping">Shipping policy</a></li>
+                    <li><a href="#start-return">Start a return</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer__col" aria-labelledby="footer-company">
+                <h2 class="footer__heading" id="footer-company">Company</h2>
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#journal">Journal</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__legal">
+            <p class="footer__legal-text"><small>© 2026 Skin—Clinic</small></p>
+            <nav class="footer__legal-nav" aria-label="Legal">
+                <ul class="footer__legal-links">
+                    <li><a href="#terms">Terms of service</a></li>
+                    <li><a href="#privacy">Privacy policy</a></li>
+                    <li><a href="#cookies">Cookies settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</div>
+
+<div id="auth-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <div class="modal__box">
+        <a href="#top" class="modal__close" aria-label="Close modal">&times;</a>
+        <h2 id="auth-title" class="modal__title">Sign in</h2>
+        <form class="modal__form" action="#" method="post">
+            <label for="auth-email">Email</label>
+            <input type="email" id="auth-email" name="email" placeholder="you@example.com" required>
+
+            <label for="auth-pass">Password</label>
+            <input type="password" id="auth-pass" name="password" minlength="6" placeholder="Min. 6 characters" required>
+
+            <button type="submit" class="btn btn--outline">Log in</button>
+        </form>
+    </div>
+</div>
+
+<a href="#top" class="to-top" aria-label="Scroll to top"></a>
+
+<script>
+    const form = document.querySelector('.search');
+    const input = document.getElementById('search');
+    const items = document.querySelectorAll('.product-list > li');
+    const empty = document.getElementById('search-empty');
+
+    function filterProducts() {
+        const query = input.value.trim().toLowerCase();
+        let found = 0;
+
+        items.forEach(function (li) {
+            const name = li.querySelector('.product__title').textContent.toLowerCase();
+            const match = name.includes(query);
+            li.hidden = !match;
+            if (match) {
+                found++;
+            }
+        });
+
+        empty.hidden = found !== 0;
+    }
+
+    input.addEventListener('input', filterProducts);
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        filterProducts();
+        document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>
